@@ -8,7 +8,7 @@ struct node
     struct node *right;
 };
 typedef struct node *NODE;
-
+ 
 NODE create_node(int item)
 {
     NODE temp;
