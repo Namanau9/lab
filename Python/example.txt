@@ -1,0 +1,3 @@
+Hello, World!
+This is a simple file handling example.
+Python is great for file operations.
