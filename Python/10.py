@@ -3,7 +3,7 @@
 import openpyxl
 def main():
     file_name = 'people_data.xlsx'
-    
+     
     # Accept the number of entries from the user
     n = int(input("Enter the number of people: "))
     
