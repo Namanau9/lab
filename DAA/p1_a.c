@@ -3,7 +3,7 @@
 
 void search(char* pat, char* txt)
 {
-    int M = strlen(pat);
+    int M = strlen(pat); 
     int N = strlen(txt);
 
     for (int i = 0; i <= N - M; i++) {
