@@ -30,4 +30,31 @@ void merge(int a[10], int left, int mid, int right) {
 
 void mergesort(int a[10], int left, int right) {
     int mid;
-    if (lef
+    if (left < right) {
+        mid = (left + right) / 2;
+        mergesort(a, left, mid);
+        mergesort(a, mid + 1, right);
+        merge(a, left, mid, right);
+    }
+}
+
+int main() {
+    int i, n, a[10];
+
+    printf("\nEnter number of elements: ");
+    scanf("%d", &n);
+
+    printf("\nEnter elements:\n");
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    mergesort(a, 0, n - 1);
+
+    printf("\nSorted elements:\n");
+    for (i = 0; i < n; i++)
+        printf("%d\n", a[i]);
+
+    printf("\nNumber of comparisons: %d\n", count);
+
+    return 0;
+}
